@@ -1,0 +1,66 @@
+/* CSS - styles.css */
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+h3 {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.outer-container {
+    border-style: solid;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+.bottom-image-container {
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+/* Image 1 - Positioned at the topmost position */
+.top-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Image 2 - Positioned at the bottommost position */
+.bottom-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+/* Image 3 - Fixed size without cropping/stretching */
+.fixed-size {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    border: none;
+    background-color: white;
+}
+
+.fixed-size img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
